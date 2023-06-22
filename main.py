@@ -18,7 +18,7 @@ application.config['SECRET_KEY'] = 'AIFUNOCUQJOR9C20NTV2N%^%$#$#^^&^*^*&*'
 bucket_name = 'controlnet-images'
 key = 'data.json'
 client = pymongo.MongoClient(
-    'mongosh "mongodb://mongo:z9nNQPhxuelyTjRvXJtF@containers-us-west-70.railway.app:8067"')
+    "mongodb://mongo:z9nNQPhxuelyTjRvXJtF@containers-us-west-70.railway.app:8067")
 db = client['Sharjeel']
 collection = db['mydb']
 
@@ -281,4 +281,4 @@ def contents():
 
 
 if __name__ == "__main__":
-    application.run(debug=True, host='0.0.0.0')
+    application.run(debug=True, host='0.0.0.0', port=5000)
